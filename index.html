@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SUNRAY GREEN TECHNOLOGY | Solar Energy Solutions in Johar Town, Lahore</title>
+<meta name="description" content="Solar panel installation, battery storage, system design, support and cleaning in Johar Town, Lahore.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{--o:#f39200;--b:#1565b5;--g:#5a9a1e;--ink:#17324d;--bg:#f7faf4;--w:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+h1,h2,h3,h4,.btn{font-family:Outfit,sans-serif;line-height:1.2}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:auto;padding:0 20px}
+section{padding:70px 0}
+.page{display:none}.page.on{display:block}
+.title{font-size:clamp(1.7rem,3.5vw,2.5rem);margin-bottom:14px;color:var(--b)}
+.btn{display:inline-block;background:var(--o);color:#fff;padding:12px 26px;border-radius:40px;font-weight:700;border:0;cursor:pointer;transition:.25s}
+.btn:hover{background:var(--g);transform:translateY(-2px)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.split>img{border-radius:18px;width:100%;height:100%;max-height:460px;object-fit:cover}
+/* header */
+.top{background:var(--ink);color:#fff;font-size:.88rem}
+.top .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:8px 20px}
+.top span,.top a{margin-right:18px}.top i{color:var(--o);margin-right:6px}
+.top .soc a{margin:0 0 0 14px}.top .soc a:hover i{color:#fff}
+header.main{background:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 14px #0001}
+header.main .wrap{display:flex;justify-content:space-between;align-items:center;padding:6px 20px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Outfit;font-weight:700;color:var(--b);font-size:1.15rem}
+.brand img{width:80px;height:80px;object-fit:cover;object-position:center}
+nav a{margin-left:26px;font-weight:600;padding:6px 0;border-bottom:3px solid transparent}
+nav a.act,nav a:hover{border-color:var(--o);color:var(--o)}
+.burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--b)}
+/* hero */
+.hero{position:relative;height:78vh;min-height:460px;overflow:hidden;padding:0;color:#fff}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity .8s;display:flex;align-items:center}
+.slide.on{opacity:1}.slide::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.5)}
+.slide .wrap{position:relative;max-width:760px;margin:0 0 0 max(20px,calc((100% - 1200px)/2))}
+.slide h1{font-size:clamp(2rem,5vw,3.6rem);margin-bottom:14px}
+.slide p{font-size:1.15rem;margin-bottom:24px}
+.arr{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:46px;height:46px;border-radius:50%;border:0;background:#fff3;color:#fff;font-size:1.1rem;cursor:pointer;backdrop-filter:blur(4px)}
+.arr:hover{background:var(--o)}.prev{left:16px}.next{right:16px}
+.dots{position:absolute;bottom:22px;width:100%;display:flex;justify-content:center;gap:10px;z-index:5}
+.dots i{width:12px;height:12px;border-radius:50%;background:#fff8;cursor:pointer}.dots i.on{background:var(--o);width:30px;border-radius:8px}
+/* services */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 24px #17324d14;display:flex;flex-direction:column}
+.card .im{position:relative;height:190px;overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card .im::after{content:"";position:absolute;inset:0;background:rgba(21,101,181,.65);transform:translateX(-100%);transition:transform .45s}
+.card:hover .im::after{transform:none}.card:hover img{transform:scale(1.08)}
+.card .tx{padding:18px;display:flex;flex-direction:column;flex:1}
+.card h3{margin-bottom:8px;color:var(--b);font-size:1.12rem}
+.card p{font-size:.93rem;margin-bottom:16px;flex:1}.card .btn{text-align:center;font-size:.9rem;padding:10px}
+/* why */
+.tile{display:flex;gap:14px;margin:0 0 18px}
+.tile i{flex:none;width:48px;height:48px;border-radius:12px;background:var(--g);color:#fff;display:grid;place-items:center;font-size:1.2rem}
+.tile h4{color:var(--ink)}
+/* reviews */
+.rev{background:#fff}.rv{overflow:hidden}.rt{display:flex;transition:transform .6s}
+.rt>div{flex:0 0 50%;padding:10px}
+.rb{background:var(--bg);border-radius:16px;padding:26px;height:100%;border-left:5px solid var(--o)}
+.stars{color:var(--o);margin-bottom:6px}.rb h4{color:var(--b);margin-bottom:8px}
+/* faq */
+details{background:#fff;border-radius:12px;margin-bottom:12px;box-shadow:0 3px 12px #17324d10}
+summary{padding:16px 20px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px;font-family:Outfit}
+summary::after{content:"\f078";font-family:"Font Awesome 6 Free";font-weight:900;color:var(--o);transition:.3s}
+details[open] summary::after{transform:rotate(180deg)}details p{padding:0 20px 18px}
+/* contact */
+.ci{display:flex;gap:16px;margin-bottom:20px;align-items:center}
+.ci i{width:50px;height:50px;border-radius:50%;background:var(--o);color:#fff;display:grid;place-items:center;font-size:1.1rem;flex:none}
+iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:18px}
+/* quote */
+.quote{background:linear-gradient(120deg,var(--b),#0e4a85);color:#fff}
+.quote .title{color:#fff}
+form{display:grid;gap:12px;background:#fff;padding:26px;border-radius:18px;color:var(--ink)}
+input,textarea,select{width:100%;padding:12px 14px;border:1.5px solid #cfd9e3;border-radius:10px;font:inherit}
+input:focus,textarea:focus{outline:0;border-color:var(--o)}
+.cnt{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px;text-align:center}
+.cnt div{background:#ffffff14;border-radius:16px;padding:22px 10px}
+.cnt i{font-size:1.8rem;color:var(--o)}.cnt h4{margin:8px 0 2px}.cnt b{font:700 2rem Outfit}
+/* pagehead */
+.ph{background:linear-gradient(#17324dcc,#17324dcc),url(https://images.unsplash.com/photo-1660330589257-813305a4a383?fm=jpg&q=60&w=3000) center/cover;color:#fff;padding:70px 0;text-align:center}
+.ph h1{font-size:2.4rem}
+/* footer */
+footer{background:var(--ink);color:#d7e2ee;padding-top:56px}
+.fg{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+footer h4{color:#fff;margin-bottom:14px}footer li{list-style:none;margin-bottom:9px}
+footer li i{color:var(--o);margin-right:10px}footer a:hover{color:var(--o)}
+footer .logo{width:130px;background:#fff;border-radius:12px;padding:4px;margin-bottom:12px}
+.copy{text-align:center;border-top:1px solid #ffffff22;margin-top:40px;padding:18px;font-size:.9rem}
+.wa{position:fixed;right:20px;bottom:20px;z-index:99;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:2rem;box-shadow:0 6px 18px #0004}
+.rise{opacity:0;transform:translateY(24px);transition:.7s}.rise.in{opacity:1;transform:none}
+@media(max-width:980px){.grid4,.cnt{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:780px){
+.split,.fg{grid-template-columns:1fr}.burger{display:block}
+nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;padding:10px 20px;box-shadow:0 10px 16px #0002}
+nav.open{display:block}nav a{display:block;margin:0}
+.rt>div{flex-basis:100%}.top .soc{display:none}.hero{height:70vh}}
+@media(max-width:480px){.grid4{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<div class="top"><div class="wrap"><div><a href="tel:+924237871494"><i class="fa-solid fa-phone"></i>0092-42-37871494</a><a href="mailto:info@sunraygreentech.com"><i class="fa-solid fa-envelope"></i>info@sunraygreentech.com</a></div>
+<div class="soc">Follow us:<a href="https://www.facebook.com/Sunray54000?_rdc=1&_rdr#" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a><a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> Twitter</a><a href="https://g.page/r/CZ2Xy3Er-6K0EBM/" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i> GMB Review</a></div></div></div>
+<header class="main"><div class="wrap"><a class="brand" href="#home"><img src="SUNRAY GREEN TECHNOLOGY.png" alt="Sunray Green Tech logo"><span>SUNRAY GREEN TECHNOLOGY</span></a>
+<button class="burger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
+<nav><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#contact">Contact Us</a></nav></div></header>
+
+<main>
+<!-- HERO -->
+<section class="hero page" data-p="home" id="hero"><div id="slides"></div>
+<button class="arr prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button><button class="arr next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button><div class="dots"></div></section>
+
+<div class="ph page" data-p="about services contact"><h1 id="ph"></h1></div>
+
+<!-- ABOUT -->
+<section class="page" data-p="home about"><div class="wrap split"><div class="rise"><h2 class="title">About Us</h2>
+<p>Welcome to SUNRAY GREEN TECHNOLOGY, your destination for smart and sustainable solar energy solutions in Johar Town, Lahore! We specialize in solar panel installation, residential solar systems, solar battery storage solutions, customized solar system design, reliable system support, and professional solar panel cleaning.</p><br>
+<p>Our goal is to help homes and businesses harness clean energy, improve energy efficiency, and reduce electricity costs with solutions tailored to their needs. Contact us today for a solar solution that powers your future!</p><br>
+<a class="btn" href="https://g.page/r/CZ2Xy3Er-6K0EBM/" target="_blank" rel="noopener">Get A Quote</a></div>
+<img class="rise" src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=774&auto=format&fit=crop" alt="Solar installation by Sunray Green Technology"></div></section>
+
+<!-- SERVICES -->
+<section class="page" data-p="home services" style="background:#eef5e6"><div class="wrap"><h2 class="title" style="text-align:center">Our Services</h2><div class="grid4" id="svc"></div></div></section>
+
+<!-- WHY -->
+<section class="page" data-p="home about"><div class="wrap split"><div class="rise"><h2 class="title">Why Choose Us</h2>
+<div class="tile"><i class="fa-solid fa-solar-panel"></i><div><h4>Tailored Solar Design</h4><p>Every system is sized around your load, roof and budget, so you pay only for what you need.</p></div></div>
+<div class="tile"><i class="fa-solid fa-user-gear"></i><div><h4>Experienced Technicians</h4><p>Our trained team handles installation, wiring and testing with careful attention to safety.</p></div></div>
+<div class="tile"><i class="fa-solid fa-bolt"></i><div><h4>Lower Electricity Bills</h4><p>Quality panels and inverters cut your monthly costs and protect you from load-shedding.</p></div></div>
+<div class="tile"><i class="fa-solid fa-headset"></i><div><h4>Dependable After-Sales Support</h4><p>We stay in touch after installation with servicing, repairs and cleaning whenever you need us.</p></div></div></div>
+<img class="rise" src="https://images.unsplash.com/photo-1668097613572-40b7c11c8727?q=80&w=870&auto=format&fit=crop" alt="Why choose Sunray Green Technology"></div></section>
+
+<!-- REVIEWS -->
+<section class="rev page" data-p="home about"><div class="wrap"><h2 class="title" style="text-align:center">Customer Reviews</h2><div class="rv"><div class="rt" id="rt"></div></div></div></section>
+
+<!-- FAQ -->
+<section class="page" data-p="home services"><div class="wrap split"><div><h2 class="title">Frequently Asked Questions</h2><div id="faq"></div></div>
+<img src="https://plus.unsplash.com/premium_photo-1678743133482-2285d3f7bc0f?q=80&w=871&auto=format&fit=crop" alt="Solar FAQ"></div></section>
+
+<!-- CONTACT -->
+<section class="page" data-p="home contact"><div class="wrap"><h2 class="title" style="text-align:center">Contact Us</h2><div class="split" style="margin-top:30px"><div>
+<div class="ci"><i class="fa-solid fa-phone"></i><div><h4>Phone</h4><a href="tel:+924237871494">0092-42-37871494</a></div></div>
+<div class="ci"><i class="fa-solid fa-location-dot"></i><div><h4>Address</h4>406 H1 Johar Town, Lahore, Pakistan</div></div>
+<div class="ci"><i class="fa-solid fa-envelope"></i><div><h4>Email</h4><a href="mailto:info@sunraygreentech.com">info@sunraygreentech.com</a></div></div>
+<div class="ci"><i class="fa-solid fa-clock"></i><div><h4>Business Hours</h4>Mon - Sat : 9:00 AM – 10:00 PM</div></div></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.7668207709494!2d74.2620884!3d31.47509489999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919035b1de2f289%3A0xb4a2fb2b71cb979d!2sSUNRAY%20GREEN%20TECHNOLOGY!5e1!3m2!1sen!2s!4v1793211880087!5m2!1sen!2s" title="Map" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></div></section>
+
+<!-- QUOTE + COUNTERS -->
+<section class="quote page" data-p="home contact about services"><div class="wrap"><div class="split"><div><h2 class="title">Request A Quote</h2>
+<p>Tell us about your home or business and we will reply with a solar plan, system size and clear pricing. Our team in Johar Town is available Monday to Saturday, 9 AM to 10 PM.</p></div>
+<form action="https://formsubmit.co/info@sunraygreentech.com" method="POST">
+<input type="hidden" name="_subject" value="New Quote Request - Sunray Green Technology"><input type="hidden" name="_captcha" value="false">
+<input name="name" placeholder="Your name" required><input name="email" type="email" placeholder="Email address" required><input name="phone" placeholder="Phone number" required>
+<select name="service"><option>Solar panel installation</option><option>Solar battery storage</option><option>Energy efficiency consulting</option><option>Solar system design</option><option>Fixing &amp; support</option><option>Solar panel cleaning</option></select>
+<textarea name="message" rows="4" placeholder="Your message" required></textarea><button class="btn" type="submit">Request A Quote</button></form></div>
+<div class="cnt" id="cnt"></div></div></section>
+</main>
+
+<footer><div class="wrap"><div class="fg"><div><img class="logo" src="SUNRAY GREEN TECHNOLOGY.png" alt="Sunray logo">
+<p>SUNRAY GREEN TECHNOLOGY offers solar panel installation, battery storage, system design, support and cleaning in Lahore, helping homes and businesses cut electricity costs with clean, reliable energy.</p><br>
+<a class="btn" href="https://g.page/r/CZ2Xy3Er-6K0EBM/" target="_blank" rel="noopener">Join Us</a></div>
+<div><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h4>Contact Information</h4><ul><li><i class="fa-solid fa-envelope"></i>info@sunraygreentech.com</li><li><i class="fa-solid fa-phone"></i>0092-42-37871494</li><li><i class="fa-solid fa-location-dot"></i>406 H1 Johar Town, Lahore, Pakistan</li><li><i class="fa-solid fa-clock"></i>Mon - Sat : 9:00 AM – 10:00 PM</li></ul></div></div></div>
+<div class="copy">© 2026 All Rights Reserved By The Ranking Geeks</div></footer>
+<a class="wa" href="https://wa.me/924237871494" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+const Q="https://g.page/r/CZ2Xy3Er-6K0EBM/";
+const U=(p,a)=>`https://${p}.unsplash.com/${a}`;
+const hero=[["Solar Panel Installation","Clean power for your Lahore home or business, installed right.",U("images","photo-1660330589257-813305a4a383?fm=jpg&q=60&w=3000&auto=format&fit=crop")],
+["Solar Battery Storage","Store sunshine by day and keep your lights on at night.",U("images","photo-1713544123641-5328f51964e4?q=80&w=713&auto=format&fit=crop")],
+["Energy Efficiency Consulting","Use less, save more with advice built around your usage.",U("images","photo-1643472018814-d9981b44162d?q=80&w=878&auto=format&fit=crop")],
+["Solar System Design","A custom system sized to your roof, load and budget.",U("plus","premium_photo-1682148205811-e8a8ce759f4b?q=80&w=653&auto=format&fit=crop")]];
+const sv=[["Solar Panel Installation","Professional installation of high-efficiency solar panels for homes and businesses. We survey your roof, plan the layout, mount securely and connect everything safely, so you start generating clean electricity and cutting your monthly bills quickly.",U("plus","premium_photo-1682148026899-d21f17c04e80?q=80&w=870&auto=format&fit=crop")],
+["Solar Battery Storage","Keep power flowing during outages and peak-rate hours with reliable battery storage. We match battery capacity to your daily usage, so the energy your panels produce in daytime is ready whenever your family or business needs it.",U("plus","premium_photo-1681433401553-589104846604?q=80&w=1160&auto=format&fit=crop")],
+["Energy Efficiency Consulting","Our experts review how your property uses electricity and point out where you are losing money. You get a practical plan covering appliances, load balancing and solar sizing, so every unit you generate or buy works harder for you.",U("plus","premium_photo-1716484905070-81336f22e401?fm=jpg&q=60&w=3000&auto=format&fit=crop")],
+["Solar System Design","Every roof and budget is different. We design custom solar systems that fit your space, sunlight and energy needs, choosing the right panels, inverter and layout to give you strong output and a faster return on investment.",U("plus","premium_photo-1661952328751-a958e0a1f7fb?q=80&w=870&auto=format&fit=crop")],
+["Fixing & Support","If your solar system underperforms or stops working, our technicians diagnose and repair it quickly. We handle inverter faults, wiring issues and monitoring problems, and provide dependable ongoing support to keep your system running at its best.",U("images","photo-1559302504-64aae6ca6b6d?q=80&w=1037&auto=format&fit=crop")],
+["Solar Panel Cleaning","Dust and dirt in Lahore can cut panel output noticeably. Our professional cleaning uses safe methods that protect the glass and frames, restoring efficiency so your system keeps producing the maximum energy every day of the year.",U("images","photo-1754619880959-2b0528375883?fm=jpg&q=60&w=3000&auto=format&fit=crop")],
+["Residential Solar Systems","Complete rooftop solar packages for homes, from small setups to full-house systems. We handle sizing, equipment, installation and testing, giving your family lower bills, protection from rising tariffs and a cleaner, more comfortable way of living.",U("images","photo-1660330589257-813305a4a383?fm=jpg&q=60&w=3000&auto=format&fit=crop")],
+["System Maintenance","Regular inspections keep your solar investment healthy. We check panels, connections, inverters and batteries, test performance and fix small problems early, so you avoid costly breakdowns and enjoy steady energy savings for many years.",U("images","photo-1559302504-64aae6ca6b6d?q=80&w=1037&auto=format&fit=crop")]].slice(0,8);
+const rv=[["Ahmed Raza","Johar Town, Lahore","The team installed our 10kW system in two days. Our electricity bill dropped sharply and the work was very neat."],
+["Ayesha Khan","DHA Lahore","Very professional staff. They designed a system for our house that fits the roof perfectly. Highly recommended."],
+["Muhammad Usman","Model Town","Battery storage changed everything for us. No more worries during load-shedding. Excellent support after installation."],
+["Fatima Noor","Wapda Town","Their cleaning service improved our output right away. Polite technicians and fair pricing."],
+["Bilal Hussain","Gulberg","Honest advice on energy efficiency. They suggested only what we needed and saved us real money."],
+["Sana Malik","Faisal Town","Quick response when our inverter had a fault. They fixed it the same day. Great service!"]];
+const fq=[["Which solar services do you offer?","We offer solar panel installation, residential systems, battery storage, custom system design, fixing and support, and professional panel cleaning."],
+["How long does a typical installation take?","Most home systems are installed within one to three days after the site survey and design are approved."],
+["How much can I save on electricity bills?","Savings depend on your system size and usage, but many customers cut their bills dramatically. We provide an estimate with your quote."],
+["Do I need a battery with my solar system?","Not always. Batteries are ideal if you face frequent outages or want night-time power. We will advise based on your needs."],
+["How often should solar panels be cleaned?","In dusty areas like Lahore, cleaning every one to two months keeps output high. We offer one-time and scheduled cleaning."]];
+const ct=[["fa-solar-panel","Panel Installations",850],["fa-battery-full","Battery Systems",420],["fa-face-smile","Happy Clients",1200],["fa-broom","Panels Cleaned",5000]];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$("#svc").innerHTML=sv.map(s=>`<div class="card rise"><div class="im"><img loading="lazy" src="${s[2]}" alt="${s[0]}"></div><div class="tx"><h3>${s[0]}</h3><p>${s[1]}</p><a class="btn" href="${Q}" target="_blank" rel="noopener">Get a Free Quote</a></div></div>`).join("");
+$("#faq").innerHTML=fq.map((f,i)=>`<details ${i?"":"open"}><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("");
+$("#rt").innerHTML=rv.map(r=>`<div><div class="rb"><div class="stars">${'<i class="fa-solid fa-star"></i>'.repeat(5)}</div><h4>${r[0]} <small style="font-weight:400;color:#667">· ${r[1]}</small></h4><p>${r[2]}</p></div></div>`).join("");
+$("#cnt").innerHTML=ct.map(c=>`<div><i class="fa-solid ${c[0]}"></i><h4>${c[1]}</h4><b data-n="${c[2]}">0</b>+</div>`).join("");
+const sc=document.createElement("script");sc.type="application/ld+json";
+sc.textContent=JSON.stringify({"@context":"https://schema.org","@type":"FAQPage",mainEntity:fq.map(f=>({"@type":"Question",name:f[0],acceptedAnswer:{"@type":"Answer",text:f[1]}}))});document.head.append(sc);
+/* hero slider */
+let si=0,st;$("#slides").innerHTML=hero.map((h,i)=>`<div class="slide" style="background-image:url('${h[2]}')"><div class="wrap"><h1>${h[0]}</h1><p>${h[1]}</p><a class="btn" href="${Q}" target="_blank" rel="noopener">Get A Free Quote</a></div></div>`).join("");
+$(".dots").innerHTML=hero.map((_,i)=>`<i data-i="${i}"></i>`).join("");
+const go=n=>{si=(n+hero.length)%hero.length;$$(".slide").forEach((s,i)=>s.classList.toggle("on",i==si));$$(".dots i").forEach((d,i)=>d.classList.toggle("on",i==si));clearInterval(st);st=setInterval(()=>go(si+1),5500)};
+$(".prev").onclick=()=>go(si-1);$(".next").onclick=()=>go(si+1);$$(".dots i").forEach(d=>d.onclick=()=>go(+d.dataset.i));go(0);
+/* reviews slider: 2 at a time */
+let ri=0;const rn=()=>innerWidth>780?2:1;
+setInterval(()=>{const pages=Math.ceil(rv.length/rn());ri=(ri+1)%pages;$("#rt").style.transform=`translateX(-${ri*100}%)`},4500);
+/* routing */
+const T={home:"",about:"About Us",services:"Our Services",contact:"Contact Us"};
+function route(){const p=(location.hash||"#home").slice(1);const k=T[p]!==undefined?p:"home";
+$$(".page").forEach(e=>e.classList.toggle("on",e.dataset.p.split(" ").includes(k)));
+$("#ph").textContent=T[k];$$("nav a").forEach(a=>a.classList.toggle("act",a.hash=="#"+k));
+$("nav").classList.remove("open");scrollTo(0,0);watch()}
+addEventListener("hashchange",route);
+/* reveal + counters */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add("in");
+if(e.target.id=="cnt"&&!e.target.d){e.target.d=1;$$("#cnt b").forEach(b=>{let n=0,t=+b.dataset.n,s=t/60;const i=setInterval(()=>{n+=s;if(n>=t){n=t;clearInterval(i)}b.textContent=Math.floor(n)},25)})}}),{threshold:.15});
+function watch(){$$(".rise,#cnt").forEach(e=>io.observe(e))}
+route();
+</script></body></html>
